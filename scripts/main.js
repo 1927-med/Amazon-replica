@@ -17,9 +17,9 @@ document.addEventListener("DOMContentLoaded", function () {
         { imgSrc: "images/Product2.jpg", title: "Product Title 2", description: "Short description of the product.", price: "$29.99" },
         { imgSrc: "images/Product3.jpg", title: "Product Title 3", description: "Short description of the product.", price: "$39.99" },
         { imgSrc: "images/Product4.jpg", title: "Product Title 4", description: "Short description of the product.", price: "$49.99" },
-        { imgSrc: "images/Product5.jpg", title: "Product Title 5", description: "Short description of the product.", price: "$59.99" },
-        { imgSrc: "images/Product6.jpg", title: "Product Title 6", description: "Short description of the product.", price: "$69.99" }
-        // Add more products as needed
+        { imgSrc: "https://via.placeholder.com/220x320?text=Product+5", title: "Product Title 5", description: "Short description of the product.", price: "$59.99" },
+        { imgSrc: "https://via.placeholder.com/220x320?text=Product+6", title: "Product Title 6", description: "Short description of the product.", price: "$69.99" }
+        //TODO: Add more products as needed for later and find a way to make it auto
     ];
 
     // Function to generate product items
