@@ -10,7 +10,6 @@ document.addEventListener("DOMContentLoaded", function () {
     let scrollAmount = 0;
 
     const scrollStep = 240; // Set the amount of pixels to scroll with each click
-    const maxScroll = carousel.scrollWidth - carousel.clientWidth; // Max scroll width
 
     // Sample product data
     const productData = [
