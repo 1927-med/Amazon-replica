@@ -93,15 +93,20 @@ nav ul li a:hover {
 .product-item h3 {
     margin: 0;
     font-size: 18px;
+    text-align: center;
 }
 
 .product-item p {
     margin: 5px 0;
+    text-align: center;
+    font-size: 14px;
 }
 
 .product-item .price {
     color: #b12704;
     font-weight: bold;
+    text-align: center;
+    margin-top: auto; /* Push price to the bottom */
 }
 
 /* Arrow Button Styles */
