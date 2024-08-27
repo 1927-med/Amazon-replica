@@ -18,9 +18,10 @@ document.addEventListener("DOMContentLoaded", function () {
         { imgSrc: "images/Product3.jpg", title: "Product Title 3", description: "This is not just a light its a future teller", price: "$3999.99" },
         { imgSrc: "images/Product4.jpg", title: "Product Title 4", description: "Short description of the product.", price: "$49.99" },
         { imgSrc: "https://via.placeholder.com/220x320?text=Product+5", title: "Product Title 5", description: "Short description of the product.", price: "$59.99" },
-        { imgSrc: "https://via.placeholder.com/220x320?text=Product+6", title: "Product Title 6", description: "Short description of the product.", price: "$69.99" }
-        { imgSrc: "https://via.placeholder.com/220x320?text=Product+7", title: "Product Title 7", description: "Short description of the product.", price: "$59.99" },
-        { imgSrc: "https://via.placeholder.com/220x320?text=Product+8", title: "Product Title 8", description: "Short description of the product.", price: "$69.99" }
+        { imgSrc: "https://via.placeholder.com/220x320?text=Product+6", title: "Product Title 6", description: "Short description of the product.", price: "$69.99" },
+        { imgSrc: "https://via.placeholder.com/220x320?text=Product+7", title: "Product Title 7", description: "Short description of the product.", price: "$79.99" },
+        { imgSrc: "https://via.placeholder.com/220x320?text=Product+8", title: "Product Title 8", description: "Short description of the product.", price: "$89.99" }
+        
         //TODO: Add more products as needed for later and find a way to make it auto
     ];
 
