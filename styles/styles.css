@@ -89,14 +89,14 @@ nav ul li a:hover {
 }
 
 /* Carousel Container Style */
-.carousel-container {
+.carousel-container, .related-carousel-container {
     position: relative;
     width: 100%;
     overflow: hidden;
     margin: 20px 0;
 }
 
-.carousel {
+.carousel, .related-carousel {
     display: flex;
     transition: transform 0.5s ease;
 }
@@ -139,6 +139,73 @@ nav ul li a:hover {
     margin: 5px 0;
     text-align: center;
     font-size: 14px;
+}
+
+.product-item .price {
+    color: #b12704;
+    font-weight: bold;
+    text-align: center;
+    margin-top: auto; /* Push price to the bottom */
+}
+
+/* Arrow Button Styles */
+.carousel-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.left-arrow {
+    left: 0;
+}
+
+.right-arrow {
+    right: 0;
+}
+
+/* Shop by Category Style */
+.shop-by-category {
+    margin: 20px 0;
+}
+
+.shop-by-category h2 {
+    margin-bottom: 10px;
+}
+
+.categories {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.category-item {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 10px;
+    width: calc(33.333% - 20px); /* Three items per row with margin */
+    box-sizing: border-box;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.category-item:hover {
+    transform: scale(1.05);
+}
+
+/* Footer Style */
+footer {
+    background-color: #232f3e;
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+    margin-top: 20px;
 }
 
 .product-item .price {
