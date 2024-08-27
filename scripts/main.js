@@ -1,7 +1,3 @@
-// main.js
-
-// main.js
-
 document.addEventListener("DOMContentLoaded", function () {
     const carousel = document.querySelector(".carousel");
     const leftArrow = document.getElementById("left-arrow");
@@ -48,20 +44,32 @@ document.addEventListener("DOMContentLoaded", function () {
     // Update maxScroll after products are generated
     const updatedMaxScroll = carousel.scrollWidth - carousel.clientWidth;
 
+    // Debounce function to limit the rate of function execution
+    function debounce(func, wait) {
+        let timeout;
+        return function(...args) {
+            clearTimeout(timeout);
+            timeout = setTimeout(() => func.apply(this, args), wait);
+        };
+    }
+
     // Scroll right
-    rightArrow.addEventListener("click", function () {
+    rightArrow.addEventListener("click", debounce(function () {
         if (scrollAmount < updatedMaxScroll) {
             scrollAmount += scrollStep;
             carousel.style.transform = `translateX(-${scrollAmount}px)`;
         }
-    });
+    }, 100));
 
     // Scroll left
-    leftArrow.addEventListener("click", function () {
+    leftArrow.addEventListener("click", debounce(function () {
         if (scrollAmount > 0) {
             scrollAmount -= scrollStep;
             carousel.style.transform = `translateX(-${scrollAmount}px)`;
         }
-    });
-});
+    }, 100));
 
+    // Add aria-labels for accessibility
+    leftArrow.setAttribute('aria-label', 'Scroll left');
+    rightArrow.setAttribute('aria-label', 'Scroll right');
+});
