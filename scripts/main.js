@@ -69,6 +69,16 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }, 100));
 
+    // Auto-scroll functionality
+    setInterval(() => {
+        if (scrollAmount < updatedMaxScroll) {
+            scrollAmount += scrollStep;
+        } else {
+            scrollAmount = 0;
+        }
+        carousel.style.transform = `translateX(-${scrollAmount}px)`;
+    }, 3000); // Auto-scroll every 3 seconds
+
     // Add aria-labels for accessibility
     leftArrow.setAttribute('aria-label', 'Scroll left');
     rightArrow.setAttribute('aria-label', 'Scroll right');
