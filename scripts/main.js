@@ -87,10 +87,33 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
-    // Call the function to generate products
+    // Function to generate new boxes
+    function generateBoxes() {
+        const boxesContainer = document.querySelector(".boxes-container");
+        const boxData = [
+            { content: "Pick up where you left off" },
+            { content: "Keep shopping for" },
+            { content: "Buy again" },
+            { content: "Promotional item 1", className: "promo-item" },
+            { content: "Promotional item 2", className: "promo-item" }
+        ];
+
+        boxData.forEach((box, index) => {
+            const boxItem = document.createElement("div");
+            boxItem.className = "box";
+            if (index === 3 || index === 4) {
+                boxItem.classList.add("promotional");
+            }
+            boxItem.innerHTML = box.content;
+            boxesContainer.appendChild(boxItem);
+        });
+    }
+
+    // Call the function to generate products, related products, catagories, and boxes
     generateProducts();
     generateRelatedProducts();
     generateCategories();
+    generateBoxes();
 
     // Update maxScroll after products are generated
     const updatedMaxScroll = carousel.scrollWidth - carousel.clientWidth;

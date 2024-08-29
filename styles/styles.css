@@ -245,3 +245,30 @@ footer {
     padding: 10px 20px;
     margin-top: 20px;
 }
+.boxes-container {
+    display: flex;
+    gap: 10px; /* Adjust the gap as needed */
+    margin-top: 20px; /* Optional: Add some margin to separate from other content */
+}
+
+.box {
+    flex: 1;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.promotional {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Adjust the gap between promotional items */
+}
+
+.promo-item {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+}
